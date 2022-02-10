@@ -2,32 +2,33 @@ package Day_3;
 
 import java.util.Scanner;
 
-public class Conditional_3 {
+public class switch_statement {
 
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);		
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter food name : ");
 		String name = sc.nextLine();
 		String category;
+		
 		switch(name) {
-		case "Burger":
+		case "burger":
 			category = "Fast Food"; break;
-		case "Pizza" :
+		case "pizza":
 			category = "Fast Food"; break;
-		case "Sandwich":
+		case "sandwich":
 			category = "Fast Food"; break;
-		case "Yogurt":
+		case "yogurt":
 			category = "Dessert"; break;
-		case "Milk Tea":
+		case "milk tea":
 			category = "Dessert"; break;
-		case "Mohinga":
+		case "monthinga":
 			category = "Burmese Food"; break;
-		case "Sushi":
-			category = "Japanese Food"; break;
+		case "sushi":
+			category = "Japenese Food"; break;
 		default:
-			category = "unknown";
+			category = "out of list!";
 		}
-		System.out.println(category);
+		System.out.println(name + " is " + category);
+		sc.close();
 	}
 }
